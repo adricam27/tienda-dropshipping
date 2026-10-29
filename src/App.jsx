@@ -13,7 +13,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const response = await fetch('http://localhost:5000/api/pedidos', {
+      const response = await fetch('https://adricam27.pythonanywhere.com/api/pedidos', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
